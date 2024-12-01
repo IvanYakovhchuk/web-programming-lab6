@@ -1,6 +1,6 @@
 async function fetchTabs() {
     try {
-        const response = await fetch('http://localhost:8080/api/tabs');
+        const response = await fetch('https://web-programming-lab6.onrender.com/api/tabs');
         const tabs = await response.json();
         generateTabs(tabs);
     } catch (error) {

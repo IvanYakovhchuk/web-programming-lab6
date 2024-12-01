@@ -17,7 +17,7 @@ async function saveTab() {
 
     console.log(JSON.stringify({ tabs: tabTitles }));
 
-    const response = await fetch('http://localhost:8080/api/tabs', {
+    const response = await fetch('https://web-programming-lab6.onrender.com/api/tabs', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
