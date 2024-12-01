@@ -1,0 +1,4 @@
+com\webprogramming\labs\lab6\controllers\TabController.class
+com\webprogramming\labs\lab6\Lab6Application.class
+com\webprogramming\labs\lab6\models\Tab.class
+com\webprogramming\labs\lab6\repositories\TabRepository.class
