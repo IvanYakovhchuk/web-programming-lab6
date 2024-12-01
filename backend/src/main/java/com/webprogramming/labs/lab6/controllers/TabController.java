@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://ivanyakovhchuk.github.io")
+@CrossOrigin(origins = "https://ivanyakovhchuk.github.io/web-programming-lab6")
 @RequestMapping("/api/tabs")
 public class TabController {
 
