@@ -41,4 +41,21 @@ function setActiveTab(clickedTab) {
     clickedTab.classList.add('active');
 }
 
+let intervalId = null;
+
+function startFetching() {
+  if (intervalId !== null) {
+    clearInterval(intervalId);
+  }
+
+  intervalId = setInterval(async () => {
+    try {
+      const result = await fetchTabs();
+    } catch (error) {
+      console.error('Помилка при виконанні запиту', error);
+    }
+  }, 1000);
+}
+
 window.onload = fetchTabs;
+window.onfocus = fetchTabs;

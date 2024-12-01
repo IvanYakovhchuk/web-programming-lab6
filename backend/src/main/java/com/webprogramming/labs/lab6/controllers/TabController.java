@@ -28,7 +28,6 @@ public class TabController {
 
     @PostMapping
     public void createTab(@RequestBody TabRequest tabsRequest) {
-        System.out.println("Received tabs: " + tabsRequest.getTabs()); // Додайте логування
         for (String tabTitle : tabsRequest.getTabs()) {
             Tab newTab = new Tab();
             newTab.setTitle(tabTitle);
