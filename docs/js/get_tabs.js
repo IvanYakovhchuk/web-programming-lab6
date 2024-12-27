@@ -1,7 +1,13 @@
 async function fetchTabs() {
     try {
+        const tabsContent = document.querySelector('.tabs-content');
+        const tabList = document.getElementById('tabs-list');
+        tabsContent.innerHTML = '<p>Downloading...</p>';
+        await new Promise(resolve => setTimeout(resolve, 0));
         const response = await fetch('https://web-programming-lab6.onrender.com/api/tabs');
         const tabs = await response.json();
+        tabsContent.innerHTML = '';
+        tabsContent.append(tabList);
         generateTabs(tabs);
     } catch (error) {
         console.error('Помилка при отриманні вкладок:', error);

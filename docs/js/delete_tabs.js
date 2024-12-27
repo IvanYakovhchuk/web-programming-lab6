@@ -13,6 +13,6 @@ async function deleteAllItems() {
         alert('Помилка при видаленні.');
       }
     } catch (error) {
-      console.error('Error sending request:', error);
+      console.error('Помилка при надсиланні запиту:', error);
     }
   }
