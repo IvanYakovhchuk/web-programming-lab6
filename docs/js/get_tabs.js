@@ -64,4 +64,3 @@ function startFetching() {
 }
 
 window.onload = fetchTabs;
-window.onfocus = fetchTabs;
